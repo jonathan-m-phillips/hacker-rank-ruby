@@ -1,7 +1,10 @@
 # print "Hello HackerRank!!"
 
+#----------------------------------------------
+
 # print self
 
+#----------------------------------------------
 
 # def odd_or_even(number)
 #
@@ -13,6 +16,20 @@
 #   puts odd_or_even(gets.to_i)
 # end
 
+#----------------------------------------------
+
 # Three variables a, b, and c are already defined. Your task is to write code that checks whether
 #   a is within the range of b and c by calling the method range?
-a.range?(b,c)
+# a.range?(b,c)
+
+#----------------------------------------------
+
+# Your task is to iterate through each of the elements in the array using each and call the method
+#   update_score on every element.
+# def scoring(array)
+#   # iterate through each of the element in array using *each* and call update_score on it
+#   array.each do |user|
+#     user.update_score
+#   end
+# end
+
