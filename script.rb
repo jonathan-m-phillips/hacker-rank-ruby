@@ -74,19 +74,42 @@
 # if TestCase, output "It's a TestCase!"
 # if Contest, output "It's a Contest!"
 # for any other object, output "It's an unknown model"
+# def identify_class(obj)
+#   # write your case control structure here
+#   case obj
+#   when Hacker
+#     puts "It's a Hacker!"
+#   when Submission
+#     puts "It's a Submission!"
+#   when TestCase
+#     puts "It's a TestCase!"
+#   when Contest
+#     puts "It's a Contest!"
+#   else
+#     puts "It's an unknown model"
+#   end
+# end
 
-def identify_class(obj)
-  # write your case control structure here
-  case obj
-  when Hacker
-    puts "It's a Hacker!"
-  when Submission
-    puts "It's a Submission!"
-  when TestCase
-    puts "It's a TestCase!"
-  when Contest
-    puts "It's a Contest!"
-  else
-    puts "It's an unknown model"
+# ----------------------------------------------
+
+# In this challenge, your task is to complete the skip_animals method that takes
+#   an animals array and a skip integer and returns an array of all elements except
+#   first skip number of items as shown in the example below.
+# For example,
+# > skip_animals([(['leopard', 'bear', 'fox', 'wolf'],], 2)
+# => ["2:fox", "3:wolf"]
+def skip_animals(animals, skip)
+
+  # creating empty array
+  not_skipped = []
+
+  # giving each animal an index
+  animals.each_with_index do |item, index|
+    # if the animal with an index >= 'skip' push the animal to not_skipped array
+    not_skipped.push("#{index}:#{item}") if index >= skip
   end
+
+  #return not_skipped array
+  not_skipped
+
 end
